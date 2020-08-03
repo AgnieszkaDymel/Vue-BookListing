@@ -15,10 +15,7 @@ export default ({
 
 
 <style scoped>
-.h1 {
-    font-weight: normal;
-}
-.h2 {
+h1, h2 {
     font-weight: normal;
 }
 </style>
