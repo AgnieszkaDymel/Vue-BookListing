@@ -1,15 +1,10 @@
 <template>
-    <div>
-        <h1>{{title}}</h1>
-        <ul>
-            
-        </ul>
-    </div>
+    <li>{{book.title}}:{{book.author}}</li>
 </template>
 
 <script>
 export default ({
-    data() {
+    /*data() {
         return {
             title: 'All Books',
             books:[
@@ -19,18 +14,23 @@ export default ({
             ]
         };
 
-    },
-    name: 'BookList',
+    },*/
+    name: 'BookItem',
+    props: [ 'book' ],
 });
 </script>
 
 
 <style scoped>
-h1, h2 {
+/*h1, h2 {
     font-weight: normal;
 }
 ul {
     list-style-type: none;
     padding: 0;
+}*/
+li {
+    display: block; 
+    margin: 0 10px;
 }
 </style>
